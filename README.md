@@ -1,112 +1,283 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Dŵr Agored
 
-Welcome Emilia Pearse,
+The purpose of Dŵr Agored is to offer cold water swimmers in the South Wales area a website to browse and post their experiences of cold water swimming. This website is useful to swimmers as they are able to recommend places they enjoy and warn other swimmers of potentially dangerous places. It can also be used as a diary for swimmers. Users can browse other people’s experiences to gain new cold water swimming destinations.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+Here is the deployed version of [Dŵr Agored](https://dwr-agored-41d2330041ac.herokuapp.com/).
 
-You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **April 26, 2024**
+## UX
 
-## Gitpod Reminders
+## User Stories
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## Target Audience
 
-`python3 -m http.server`
+The target audience for this website are experienced or potential cold water swimmers within the South Wales area. By refining to a smaller location in this target, it is likely more users will create more posts within one location and posts are relevant to the user. By naming the website “Dŵr Agored”, this targets a Welsh audience by using the Welsh language.
 
-A blue button should appear to click: _Make Public_,
+#### First Time Visitor Goals
 
-Another blue button should appear to click: _Open Browser_.
+As a first time user of the site, I want to be able to
+Create an account
 
-To run a backend Python file, type `python3 app.py` if your Python file is named `app.py`, of course.
+- Create an account
+- Learn what the website is about
+- Follow Dŵr Agored on social media
 
-A blue button should appear to click: _Make Public_,
+#### Returning Visitor Goals
 
-Another blue button should appear to click: _Open Browser_.
+As a returning user of the site I want to be able to:
 
-By Default, Gitpod gives you superuser security privileges. Therefore, you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+- Log in to own account
+- Post own experience of cold water swimming in South Wales area
+- Edit and delete own posts
+- Find cold water swimming locations in South Wales.
 
-To log into the Heroku toolbelt CLI:
+### User Journey
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+![Map of user journey](dwragored/static/images/docs/userjourney.webp)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, you can create a new one with _Regenerate API Key_.
+### All user goals
 
-------
+- Create an account
+- View swimming locations on a map of South Wales
+- Learn about what the website does
 
-## Release History
+### Returning user goals
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+- Log in to own account
+- Post own experience of cold water swimming in South Wales area
+- View other people's post to gain new recommendations
+- Edit and delete own post
+- View own posts to reminisce and reflect on own experiences
 
-**April 26 2024:** Update node version to 16
+### Future Development
 
-**September 20 2023:** Update Python version to 3.9.17.
+- Map for users to be able to input their swim location. This would be their precise location as opposed to a trust based map.
+- Ability for users to reset passwords if they have forgotten their password
+- For users to be able to upload photos of their swimming experience
+- Ability for users to comment on each other's posts
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+## Wireframes
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+### Home Page
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+The Home Page is a page all users have access to. The purpose of this page is to educate the users of the website's purpose.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+![Homepage Wireframe](dwragored/static/images/docs/home.webp)
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+### All Swim
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+Initially called "My Swim", "All Swim" features users' swim experiences through filling out the "My Swim" form.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+![My Swim Form](dwragored/static/images/docs/allswimwireframe.webp)
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+### Log In
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+This will be the log in page.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+![Log In](dwragored/static/images/docs/signinwireframe.webp)
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+## Features
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+### The Navigation Menu
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+![The Navigation Menu](dwragored/static/images/docs/navigation.webp)
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+The NavBar for new users shows only three pages: Home Page, Register, and Log In. The Navigation Bar changes when users log in, allowing returning users to have access to the following: Home Page, All Swims, Location, Profile, Log Out. The necessity to have an account for the likes of “All Swims” and “Location” ensures that only regular users are able to create posts and edit other people’s. The profile offers a space for users to feel individually a part of the website. In future implementations of this site, users’ own swims will feature on their Profile page and users could follow other users. On smaller screens, this becomes a hamburger menu to ensure good user practice.
 
-------
+### Logo
 
-## FAQ about the uptime script
+The Logo is simply the title “Dŵr Agored” written in blue. This is situated on the left of the nav bar. When clicked, this will redirect to the Home Page. “Dŵr Agored” translates to “Open Water”. The simplicity of this definition and the styling of the logo has been done to emphasise the simplicity of the concept itself and the necessity of it too. The fact that this is written in Welsh, contextualises the site to be for people in Wales, immediately targeting the desired users.
 
-**Why have you added this script?**
+![Logo](dwragored/static/images/docs/logo.webp)
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+### Home Page
 
-**How will this affect me?**
+The Home Page is a page all users have access to. The Home Page’s purpose is to clearly tell the new or returning user what the purpose of the website is. It shows a hero image and an About section. Initially, this was going to have the All Swims posts too, however, this has been changed to entice new users to register and become a recurring user. The more returning users that visit the site and create posts, the more locations and experiences that exist on the website, creating a space for recommendations and reflections. It’s important for users to feel the benefits of having an account and signing in.
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+![Home upper page](dwragored/static/images/docs/homepagenav.webp)
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+![Homelower page](dwragored/static/images/docs/homeabout.webp)
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+![Home iPad](dwragored/static/images/docs/homeipad.webp)
 
-**So….?**
+![Home mobile](dwragored/static/images/docs/mobilehome.webp)
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+### Hero Image
 
-**Can I opt out?**
+The hero image, situated on the Home Page, is an image of Pen-Ffordd-Goch in South Wales taken by myself before a swim. As this image is one of the initial things a user will see, the hero image contextualises the website by immediately highlighting the need for the site itself. This image is simply as the website suggests, “Dŵr Agored” - “Open Water”. It is hard to find good swimming locations in South Wales, this website aims to help users with this issue and this image highlights one location.
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+![Hero Image](dwragored/static/images/heroimage.webp)
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+### Colour Palette
 
-**Anything more?**
+The colour palette was inspired by the hero image and the theme of water itself. The intention was to be as simple and clear as possible to ensure the user is able to understand and navigate the website with ease. The colours were chosen using Coolors to pick colours from the hero image and then compared to using Materialize to create a more cohesive finish.
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+![Coolor's palette](dwragored/static/images/docs/colourcoolors.webp)
 
----
+### All Swims
 
-Happy coding!
+The All Swims page only features for returning users. This page shows users’ posts. The All Swims page features an image of somebody swimming in cold water, immediately aligning the values of the website with the user. As the returning user is likely to either be a cold water swimmer themselves or tempted by the prospect, this image allows the user to recognise themselves in the image and with the site as a whole, making the space more personal.
+
+Below the image are collapsible posts of users’ swims. The posts initially shows the title of the swim and the date of the swim. When a user clicks the arrow button on the left, the post is shown fully. Users are able to see the Location, a description, the cleanliness of the swim, and whether the user would like to go again.
+
+### Add Swim Button
+
+Situated on the All Swims page, above the image of somebody swimming, is the “Add Swim Button”. When clicked, this button takes the user to a form where users are asked to give a title to their swim, describe their swim, rate the cleanliness, choose a date of when they went swimming (this could be any time in the past as the user did not necessarily go swimming on the day of posting), are asked if they would go again, and asked to specify the location from the dropdown. While the title and description are boxes for the user to type into, the dat is selected using Materialize’s “Datepicker”, creating a good user experience. Once users are happy with their entry, the user will click “Add Swim” below the form to post their swim.
+
+### Edit and Delete
+
+Users are able to edit their swim by clicking the “Edit” button on the collapsible swim posts on the All Swims page. By clicking “Edit”, users are taken to the swim form they initially filled out to add their swim, but are now able to adjust their answers. To delete a swim, users can click “Delete” on the same collapsible post. The “Delete” button, when clicked, takes the user to a modal asking whether the user is sure they wish to delete their swim. This defensive programming ensures users cannot accidentally delete their posts.
+
+### Location Page
+
+The Location page is a space in which users can add their swim locations in order to use for the All Swims post. To add a location, users simply click “Add Location”. Users type their specified location before selecting “Add New Location”. This page is for regular users only in order to protect the locations submitted. If a location is deleted, all posts using that location are also deleted, as this website’s predominant focus is recommending locations. Once added, locations are presented using Materialize cards, featuring the name of the location and edit/delete buttons similar to the All Swim buttons. These locations make up the locations users are able to choose from within the My Swim form.
+
+![add location](dwragored/static/images/docs/addlocationimg.webp)
+
+### Log In/Log Out/Register
+
+Users are able to Register for an account. Users must log in to access the All Swims and Location pages.
+
+## Functionality
+
+“Dŵr Agored” has CRUD functionality. Regular users are able to Create posts, Read posts on the All Swims page, Update posts using the “Edit Swim” button, and Delete posts using the “Delete Modal”. Furthermore, regular users are able to Create, Read, Update, and Delete locations. Users are only able to use this CRUD functionality if they are logged in. To log in, users must first registrate using the “Registrate” page. Users are then asked to Create a username and a password. This has been created using cards through Materialize and the Taskmanager mini project on Code Institute. The authenticication has been adapted to be compatible with SQL.
+
+### Accessibility
+
+Materialize has been incredibly useful in ensuring accessibility needs are met. All images featured also include descriptive alt tags to ensure good user practice. Semantic HTML has been used consistently to ensure code is clear and readable. Colours have been considered to ensure there is sufficient contrast so users can navigate the website with ease.
+
+## Database Schema
+
+![Database Schema](dwragored/static/images/docs/dbschema.webp)
+
+## Testing
+
+Unfortunetly, as explained above, this testing is no longer true and only the homepage, profile, and register is functional.
+
+### User Stories
+
+| As a ... I want to...                                                                            | Action                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| As a First Time user, I want to create an account                                                | By clicking “Register” on the Navigation Bar, first time users are able to create an account by typing in a unique username and a password.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| As a First Time user, I want to learn what the website is about                                  | The homepage offers cold water swimmers a space to learn the purpose of the website. Immediately the website shows an image of open water, the logo itself translates to “Open Water”, and the About section explains the purpose of the website.                                                                                                                                                                                                                                                                                                                                                                              |
+| As a First Time user, I want to follow Dŵr Agored on social media                                | [Twitter](https://www.twitter.com), [Facebook](https://www.facebook.com), [Instagram](https://www.instagram.com), and [Youtube](https://www.youtube.com) are all featured on the footer throughout the entire website.                                                                                                                                                                                                                                                                                                                                                                                                         |
+| As a Returning user, I want to log into my own account                                           | By clicking on “Log In” on the navigation menu, the user is redirected to the Log In page wherein users can type in their previously created username and password and click to log in. Users will be taken to their profile page.                                                                                                                                                                                                                                                                                                                                                                                             |
+| As a Returning user, I want to post my own experience of cold water swimming in South Wales area | The “All Swims” page features an “Add Swim” button. When clicked, users are taken to the Add Swim form wherein they are asked for the following: swim title, swim description, cleanliness, would they go again, date of swim, and location. After completing this form and clicking “Add Swim”, users are redirected back to the “All Swims” page where they will find their new post.                                                                                                                                                                                                                                        |
+| As a Returning user, I want to edit and delete my own posts                                      | Users are able to edit and delete posts using the “Edit” and “Delete” buttons found on the collapsable posts on the “All Swims” page. When the “Edit” button is clicked, users are taken back to the swim form they’d previously filled, and are able to change their answers. When the “Delete” button is selected, users are shown a modal confirming that users are sure they would like to delete. This is to ensure that no swims are accidentally deleted. Similarly, users are able to edit and delete swim locations using the respective “Edit” and “Delete” buttons on the location cards, within the Location page. |
+| As a Returning user, I want to find cold water swimming locations in South Wales                 | For a quick look at recommended locations, the Location page shows a card for each location that has been previously recommended. To know more about other user’s experiences in that location, users are able to view all users’ posts/swims on the “All Swims” page. The collapsible initially shows the title of the swim and date of the swim but, when opened, reveals the user’s description, cleanliness, if they would go again, and, of course, the location. This potentially users who are trying to find cold water swimming locations a comprehensive review of different locations in the South Wales area.      |
+
+**HTML Validation**
+
+[W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdwr-agored-41d2330041ac.herokuapp.com%2F) has been used but
+
+**CSS Validation**
+
+![W3C Jigsaw[(dwragored/static/images/docs/cssvalidation.webp)]
+
+**Javascript Validator**
+
+[JS Hint](https://jshint.com/) showed no errors.
+
+**Ligthhouse**
+
+[Google Lighthouse(<https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?pli=1>): ![Google Lighthouse](dwragored/static/images/docs/lighthouse.webp)
+
+### Defensive Programming
+
+Before deleting a swim or location, users are asked if they are sure they would like to delete it. Only users who are logged in can alter their own posts.
+
+## Deployment
+
+### Creating the database
+
+- Using [ElephantSQL](https://customer.elephantsql.com/), click "Create New Instance".
+- Set up your plan by giving a name to the project and select the Tiny Turtle (Free) plan.
+- Click "select Region" and choose a data center near you
+- Click "Review" and check details are correct.
+- Click "Create Instance"
+- Return to dashboard and click on the database instance name
+- In the URL section, copy the database URL
+
+In your IDE workspace:
+
+-Generate the requirements.txt file with the following command: pip freeze --local > requirements.txt
+
+- Create a new file called "Procfile" in the root directory
+- Inside Procfile, add the following command: web: python run.py
+- Open your **init**.py file
+- Add an if statement before the line setting the SLQALCHEMY_DATABASE_URI and, in the else, set the value to reference a new variable, DATABASE_URL.
+- To ensure that SQLAlchemy can also read our external database, its URL needs to start with “postgresql://”, but we should not change this in the environment variable. Instead, we’ll make an addition to our else statement from the previous step to adjust our DATABASE_URL in case it starts with postgres://:
+- Save, add, commit, and push these changes to Github.
+
+Connecting the database to the hosting platform:
+
+- Log into [Heroku](Heroku.com) and click "New" and then "Create new app"
+- Choose a name for your app, select a region, and click "Create app"
+- Go to Settings of your app
+- Click "Reveal Config Vars"
+- Paste the database URL you copied earlier from ElephantSQL
+- Add a Config Var DATABASE_URL and paste your ElephantSQL database URL in as the value. Make sure you click “Add”
+- Add each environment variable except DEVELOPMENT and DB_URL
+
+### Deploying the app
+
+- Navigate to the “Deploy” tab of your app
+- In the Deployment method, click "Connect to Github"
+- Search for your repo and select "Connect"
+- Find the Manual deploy section and click "Deploy Branch".
+- Click the "More" button and select "Run console"
+- Type python3 into the console and click "Run"
+- To create the tables, use "from dwragored import db" and then "db.create_all()". Exit the Python terminal by typing "exit()".
+- Click "Open app"
+- Congratulations! You have successfully deployed your app to Heroku!
+
+## Technology
+
+### Languages Used
+
+HTML, CSS, Python, and Javascript.
+
+### Database Used
+
+Postgresl, ElephantSQL
+
+### Frameworks Used
+
+- For responsive styling and good user experience, I used [Materialize](https://materializecss.com/).
+
+### Libraries and Packages Used
+
+- [Flask](https://flask.palletsprojects.com/en/3.0.x/)
+
+Jinja
+
+- Icons were created using [Font Awesome](https://fontawesome.com/)
+
+### Programs Used
+
+- For version control, I used [Github](https://github.com/
+
+- [ElephantSQL](https://customer.elephantsql.com/) has been used to manage the PostgreSQL database.
+
+- The app has been deployed to [Heroku](https://dashboard.heroku.com/apps).
+
+## Credits
+
+- [Code Institute Taskmanager](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+DIWADRDB+2022_Q3/courseware/c0c31790fcf540539fd2bd3678b12406/6e44128b0b37416ab40c1a87ef2cb32a/) has been used and adapted for the purpose of this project.
+
+## Media
+
+- The Wireframes were created using [Balsamiq](https://balsamiq.com/)
+
+- [Coolors](https://coolors.co/)’s “Colour Picker” has been used to choose colours from the hero image.
+
+- [Unsplash](https://unsplash.com/photos/woman-in-body-of-water-during-daytime-PYRxWCDvQtg) was used for the swimming image on the All Swims page. The hero image was taken by myself.
+
+- The footer contains the following social media accounts: [X](https://twitter.com/), [Facebook](https://www.facebook.com/), [Instagram](https://www.instagram.com/), [Youtube](https://www.youtube.com/).
+
+- To implement the User Login and the ability to edit and delete, I used this [Flask Login Documentation](https://flask-login.readthedocs.io/en/latest/#)
+
+- [Favicon](https://favicon.io/) provided the wave Favicon.
+
+## Acknowledgment
+
+Thank you to my mentor, Martina, my facilitator, Marko, and the tutor support team at Code Institute for supporting me with this project.
