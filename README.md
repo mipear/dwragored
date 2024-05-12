@@ -252,9 +252,11 @@ Jinja
 
 - Icons were created using [Font Awesome](https://fontawesome.com/)
 
+- [This](https://pep8ci.herokuapp.com/#) CI Python Linter/Pep 8 formatter was used to ensure good Python practice.
+
 ### Programs Used
 
-- For version control, I used [Github](https://github.com/
+- For version control, I used [Github](https://github.com/)
 
 - [ElephantSQL](https://customer.elephantsql.com/) has been used to manage the PostgreSQL database.
 
