@@ -1,117 +1,62 @@
 {% extends "base.html" %} {% block content %}
 
-<h3 class="light-blue-text text-darken-4 center-align">Edit Swim</h3>
+<h3 class="light-blue-text text-darken-4 center-align">Home</h3>
 
-<div class="row card-panel grey lighten-5">
-    <form class="col s12" method="POST" action="{{ url_for('add_swim', myswim_id=myswim.id) }}">
-        <!-- swim name -->
-        <div class="row">
-            <div class="input-field col s12">
-                <i class="fas fa-folder-open prefix light-blue-text text-darken-4"></i>
-                <input id="swim_name" name="myswim_title" value="{{ myswim.myswim_title }}" minlength="3" maxlength="25"
-                    type="text" class="validate" required />
-                <label for="swim_name">Swim Name</label>
-            </div>
+<section>
+    <!-- This is the hero image -->
+    <div id="hero-outer">
+        <div>
+            <img id="hero-image" class="responsive-img" src="{{ url_for('static', filename='/images/heroimage.webp') }}"
+                alt="Pen-Ffordd-Goch Pond" />
         </div>
-        <!-- swim description -->
-        <div class="row">
-            <div class="input-field col s12">
-                <i class="fas fa-folder-open prefix light-blue-text text-darken-4"></i>
-                <textarea id="swim_description" name="myswim_description" minlength="5" maxlength="200" type="text"
-                    class="materialize-textarea validate" required>
-                    {{- myswim.myswim_description -}}
-                </textarea>
-                <label for="swim_description">Swim Description</label>
-            </div>
+        <div id="cover-text">
+            <h2>Dŵr Agored</h2>
         </div>
-        <!-- swim date -->
-        <div class="row">
-            <div class="input-field col s12">
-                <i class="fas fa-calendar prefix light-blue-text text-darken-4"></i>
-                <input id="swim_date" name="date" type="text" value="{{ myswim.date.strftime('%d %B, %Y') }}"
-                    class="datepicker validate" required />
-                <label for="swim_date">Date</label>
-            </div>
-        </div>
-        <!-- go_again -->
-        <div class="row">
-            <div class="input-field col s12">
-                <div class="switch">
-                    <i class="fas fa-folder-open prefix light-blue-text text-darken-4"></i>
-                    <label for="go_again">
-                        {% if myswim.go_again == True %}
-                        <input id="go_again" name="go_again" type="checkbox" checked />
-                        {% else %}
-                        <input id="go_again" name="go_again" type="checkbox" />
-                        {% endif %}
-                        <span class="lever"></span>
-                        Would you go again?
-                    </label>
+    </div>
+</section>
+<br />
+
+<!-- About section -->
+<section>
+    <div id="about">
+        <h3 class="light-blue-text text-darken-4 center-align">About Dŵr Agored</h3>
+        <h5 class="light-blue-text text-darken-3 center-align">
+            Are you a cold water swimmer based in South Wales?
+            Dŵr Agored (Open Water)
+            is a resource for cold water swimmers to share and browse swims, using the All Swims page. As a cold
+            water swimmer myself, I know sometimes it is hard to find the right
+            location.
+
+            Navigate to the Location page to add a new location, then "Add A Swim" on the All Swims page.
+            Record your swim and share your experiences to enrich the lives of others.
+        </h5>
+    </div>
+</section>
+
+<br>
+
+<section>
+    <div class="row">
+        <div class="col s12">
+            <div class="card light-blue darken-4 center-align">
+                <div class="card-content white-text">
+                    <span class="card-title">Find a recommended swim and embrace the benefits:</span>
+                    <h5>
+                        <ul>
+                            <li>Cost effective - once you have the gear, it’s free!</li>
+                            <li>Boosts your immune system by increasing the production of white blood cells</li>
+                            <li>Improves blood circulation by constricting your blood vessels which helps in oxygenating
+                                your
+                                body
+                            </li>
+                            <li>Reduces stress - it lowers your blood pressure and improves your heart health</li>
+                            <li>Great way to meet people - chill and chatter</li>
+                        </ul>
+                    </h5>
                 </div>
             </div>
         </div>
-        <!-- cleanliness rating 
-    <div class="row">
-      <div class="input-field col s12">
-        <i class="fas fa-folder-open prefix light-blue-text text-darken-4"></i>
-        <input
-          id="cleanliness_rating"
-          name="cleanliness_rating"
-          type="text"
-          class="validate"
-          required
-        />
-        <label for="cleanliness_rating">Cleanliness?</label>
-      </div>
-    </div> -->
-
-        <div class="row">
-            <div class="input-field col s12">
-                <i class="fas fa-folder-open prefix light-blue-text text-darken-4"></i>
-                <select id="cleanliness_rating" name="cleanliness_rating" class="validate" required>
-                    <option value="" disabled selected>Choose your rating</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                </select>
-                <label for="cleanliness_rating">Cleanliness out of 10?</label>
-            </div>
-        </div>
-        <!-- location_id -->
-        <div class="row">
-            <div class="input-field col s12">
-                <i class="fas fa-folder-open prefix light-blue-text text-darken-4"></i>
-                <select id="location_id" name="location_id" class="validate" required>
-                    <option value="" disabled>Choose Location</option>
-                    {% for location in location %} {% if location == myswim.location %}
-                    <option value="{{ location.id }}" selected>
-                        {{ location.location_name }}
-                    </option>
-                    {% else %}
-                    <option value="{{ location.id }}">
-                        {{ location.location_name }}
-                    </option>
-                    {% endif %} {% endfor %}
-                </select>
-                <label for="location_id">Location</label>
-            </div>
-        </div>
-        <!-- submit button -->
-        <div class="row">
-            <div class="col s12 center-align">
-                <button type="submit" class="btn-large light-blue darken-1">
-                    Edit Swim <i class="fas fa-plus-square right"></i>
-                </button>
-            </div>
-        </div>
-    </form>
-</div>
+    </div>
+</section>
 
 {% endblock %}
