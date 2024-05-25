@@ -151,7 +151,7 @@ def delete_location(location_id):
 # Add swim
 @app.route("/add_swim", methods=["GET", "POST"])
 @login_required
-def add_swim(myswim_id):
+def add_swim():
     print(current_user)
     location = list(Location.query.order_by(Location.location_name).all())
     if request.method == "POST":
