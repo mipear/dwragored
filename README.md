@@ -139,7 +139,7 @@ Users are able to Register for an account. Users must log in to access the All S
 
 ## Functionality
 
-“Dŵr Agored” has CRUD functionality. Regular users are able to Create posts, Read posts on the All Swims page, Update posts using the “Edit Swim” button, and Delete posts using the “Delete Modal”. Furthermore, regular users are able to Create, Read, Update, and Delete locations. Users are only able to use this CRUD functionality if they are logged in. To log in, users must first registrate using the “Registrate” page. Users are then asked to Create a username and a password. This has been created using cards through Materialize and the Taskmanager mini project on Code Institute. The authenticication has been adapted to be compatible with SQL.
+“Dŵr Agored” has CRUD functionality. Regular users are able to Create posts, Read posts on the All Swims page, Update posts using the “Edit Swim” button, and Delete posts using the “Delete Modal”. Furthermore, regular users are able to Create, Read, Update, and Delete locations. Users are only able to use this CRUD functionality if they are logged in. To log in, users must first registrate using the “Registrate” page. Users are then asked to Create a username and a password. This has been created using cards through Materialize and the Taskmanager mini project on Code Institute. The authentication has been adapted to be compatible with SQL.
 
 ### Accessibility
 
@@ -150,8 +150,6 @@ Materialize has been incredibly useful in ensuring accessibility needs are met. 
 ![Database Schema](dwragored/static/images/docs/dbschema.webp)
 
 ## Testing
-
-Unfortunetly, as explained above, this testing is no longer true and only the homepage, profile, and register is functional.
 
 ### User Stories
 
@@ -167,11 +165,11 @@ Unfortunetly, as explained above, this testing is no longer true and only the ho
 
 **HTML Validation**
 
-[W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdwr-agored-41d2330041ac.herokuapp.com%2F) has been used but
+[W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdwr-agored-41d2330041ac.herokuapp.com%2F) 
 
 **CSS Validation**
 
-![W3C Jigsaw[(dwragored/static/images/docs/cssvalidation.webp)]
+![W3C Jigsaw](dwragored/static/images/docs/cssvalidation.webp)
 
 **Javascript Validator**
 
@@ -179,7 +177,7 @@ Unfortunetly, as explained above, this testing is no longer true and only the ho
 
 **Ligthhouse**
 
-[Google Lighthouse(<https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?pli=1>): ![Google Lighthouse](dwragored/static/images/docs/lighthouse.webp)
+[Google Lighthouse](<https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?pli=1>): ![Google Lighthouse]()
 
 ### Defensive Programming
 
