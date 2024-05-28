@@ -224,9 +224,10 @@ def profile(username):
 
 @app.route("/user_logout")
 def logout():
-    logout_user(user, remember=False)
+    user = current_user
+    logout_user()
     flash("You have been logged out")
-    session.pop("user")
+    session.pop("user", None)
     return redirect(url_for("login"))
 
 
