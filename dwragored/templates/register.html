@@ -21,8 +21,7 @@
             maxlength="15"
             pattern="^[a-zA-Z0-9]{5,15}$"
             class="validate"
-            required
-          />
+            required>
           <label for="username">Username</label>
         </div>
       </div>
@@ -38,8 +37,7 @@
             maxlength="15"
             pattern="^[a-zA-Z0-9]{5,15}$"
             class="validate"
-            required
-          />
+            required>
           <label for="password">Password</label>
         </div>
       </div>
@@ -51,6 +49,7 @@
           Register <i class="fas fa-sign-in-alt"></i>
         </button>
       </div>
+    </div>
     <!-- Url for login page -->
     <div>
       <a href="{{ url_for('login') }}">Already have an account? Log in here</a>
