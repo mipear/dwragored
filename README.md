@@ -310,6 +310,8 @@ Materialize has been incredibly useful in ensuring accessibility needs are met. 
 
 **CSS Validation**
 
+The [CSS Validator](https://jigsaw.w3.org/css-validator/validator) shows no errors:
+
 ![W3C Jigsaw](dwragored/static/images/docs/testing/cssvalidator.png)
 
 **Javascript Validator**
@@ -418,6 +420,8 @@ Postgresl, ElephantSQL
 - Icons were created using [Font Awesome](https://fontawesome.com/)
 
 - [This](https://pep8ci.herokuapp.com/#) CI Python Linter/Pep 8 formatter was used to ensure good Python practice.
+
+- [CSS Validator](https://jigsaw.w3.org/css-validator/validator)
 
 ### Programs Used
 
