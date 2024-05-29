@@ -185,12 +185,14 @@ def edit_swim(myswim_id):
             myswim.location_id = request.form.get("location_id")
 
             db.session.commit()
-        return render_template("edit_swim.html", myswim=myswim,
-                               location=location)
+            return redirect(url_for("allswims"))
 
     else:
         flash("You cannot edit other users' swims!")
         return redirect(url_for("allswims"))
+
+    return render_template("edit_swim.html", myswim=myswim,
+                               location=location)
 
 
 # Delete swim
