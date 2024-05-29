@@ -175,7 +175,7 @@ Above, users are able to edit the swim, due to them having created the post, whe
 
 ### Add Swim Button
 
-Situated on the All Swims page, above the image of somebody swimming, is the “Add Swim Button”. When clicked, this button takes the user to a form where users are asked to give a title to their swim, describe their swim, rate the cleanliness, choose a date of when they went swimming (this could be any time in the past as the user did not necessarily go swimming on the day of posting), are asked if they would go again, and asked to specify the location from the dropdown. While the title and description are boxes for the user to type into, the date is selected using Materialize’s “Datepicker”, creating a good user experience. Once users are happy with their entry, the user will click “Add Swim” below the form to post their swim.
+Situated on the All Swims page, above the image of somebody swimming, is the “Add Swim Button”. When clicked, this button takes the user to a form where users are asked to give a title to their swim, describe their swim, rate the cleanliness, choose a date of when they went swimming (this could be any time in the past as the user did not necessarily go swimming on the day of posting), are asked if they would go again, and asked to specify the location from the dropdown. While the title and description are boxes for the user to type into, the date is selected using Materialize’s “Datepicker”, creating a good user experience. However, the datepicker is only clickable and will not work if users use the tab button when going to their next entry. This is likely due to the framework used and I will fix this at a later date. Once users are happy with their entry, the user will click “Add Swim” below the form to post their swim.
 
 Add swim form:
 
@@ -286,6 +286,10 @@ Mobile:
 ### Accessibility
 
 Materialize has been incredibly useful in ensuring accessibility needs are met. All images featured also include descriptive alt tags to ensure good user practice. Semantic HTML has been used consistently to ensure code is clear and readable. Colours have been considered to ensure there is sufficient contrast so users can navigate the website with ease.
+
+### Unfixed bugs
+
+As mentioned previously, the 'datepicker' used in the 'Add Swim' form is only clickable. If users attempt to tab through their choices on the 'Add Swim' form, the date allows users to type and, therefore, the form does not work. At a later date I will fix this issue.
 
 ## Database Schema
 
