@@ -310,7 +310,7 @@ Materialize has been incredibly useful in ensuring accessibility needs are met. 
 
 **CSS Validation**
 
-![W3C Jigsaw](dwragored/static/images/docs/cssvalidation.webp)
+![W3C Jigsaw](dwragored/static/images/docs/testing/cssvalidator.png)
 
 **Javascript Validator**
 
@@ -414,8 +414,6 @@ Postgresl, ElephantSQL
 ### Libraries and Packages Used
 
 - [Flask](https://flask.palletsprojects.com/en/3.0.x/)
-
-Jinja
 
 - Icons were created using [Font Awesome](https://fontawesome.com/)
 
