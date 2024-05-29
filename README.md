@@ -170,7 +170,7 @@ To ensure good user practice, users are only able to edit/delete their own posts
 
 Above, users are able to edit the swim, due to them having created the post, whereas below they cannot.
 
-![Uneditable All Swim](dwragored/static/images/docs/testing/swimsuneditable)
+![Uneditable All Swim](dwragored/static/images/docs/testing/swimsuneditable.png)
 
 ### Add Swim Button
 
@@ -192,7 +192,7 @@ Mobile:
 
 ![Mobile Upper Add](dwragored/static/images/docs/testing/addswimphone.png)
 
-![Mobile Lower Add](dwragored/static/images/docs/testing/addswimbottom.png)
+![Mobile Lower Add](dwragored/static/images/docs/testing/addswimphonebottom.png)
 
 ### Location Page
 
@@ -212,7 +212,7 @@ Mobile:
 
 ![Mobile location upper](dwragored/static/images/docs/testing/locationphone.png)
 
-![Mobile location lower](dwragored/static/images/docs/testing/locationphonebottom)
+![Mobile location lower](dwragored/static/images/docs/testing/locationphonebottom.png)
 
 ### Add location
 
