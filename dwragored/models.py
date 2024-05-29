@@ -6,7 +6,6 @@ class Location(db.Model):
     # schema for the Location model
     id = db.Column(db.Integer, primary_key=True)
     location_name = db.Column(db.String(25), unique=True, nullable=False)
-    # old code but doesn't seem to be updated in db: my_swim = db.relationship("MySwim", backref="location",
     myswim = db.relationship("MySwim", backref="location",
                               cascade="all, delete", lazy=True)
     user_id = db.Column(db.Integer, db.ForeignKey("user.id"), nullable=False)
