@@ -44,7 +44,6 @@ def allswims():
 # Home Page
 @app.route("/")
 def homepage():
-    print(current_user)
     return render_template("homepage.html")
 
 
@@ -92,7 +91,6 @@ def register():
         new_user = User(username=username.lower(), password=password)
         db.session.add(new_user)
         session["user"] = username
-        print("user in session -register route = ", session["user"])
         db.session.commit()
 
         flash("Registration Successful!")
@@ -152,10 +150,8 @@ def delete_location(location_id):
 @app.route("/add_swim", methods=["GET", "POST"])
 @login_required
 def add_swim():
-    print(current_user)
     location = list(Location.query.order_by(Location.location_name).all())
     if request.method == "POST":
-        print(request.form)
         myswim = MySwim(
             myswim_title=request.form.get("myswim_title"),
             myswim_description=request.form.get("myswim_description"),
@@ -178,8 +174,6 @@ def add_swim():
 def edit_swim(myswim_id):
     myswim = MySwim.query.get_or_404(myswim_id)
     location = list(Location.query.order_by(Location.location_name).all())
-    print(f'swim user id: {myswim.user_id}')
-    print(f'current user id: {current_user.id}')
     if myswim.user_id == current_user.id:
         if request.method == "POST":
             myswim.myswim_title = request.form.get("myswim_title")
