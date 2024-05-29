@@ -306,7 +306,7 @@ Materialize has been incredibly useful in ensuring accessibility needs are met. 
 
 **HTML Validation**
 
-[W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdwr-agored-41d2330041ac.herokuapp.com%2F) 
+[W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdwr-agored-41d2330041ac.herokuapp.com%2F#textarea) has been used to validate HTML.
 
 **CSS Validation**
 
@@ -317,6 +317,10 @@ The [CSS Validator](https://jigsaw.w3.org/css-validator/validator) shows no erro
 **Javascript Validator**
 
 [JS Hint](https://jshint.com/) showed no errors.
+
+**Python Linter**
+
+The [Pep8/ CI Python Linter](https://pep8ci.herokuapp.com/#) has been used to ensure Python readability.
 
 **Lighthouse**
 
