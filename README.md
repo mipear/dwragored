@@ -174,7 +174,7 @@ Above, users are able to edit the swim, due to them having created the post, whe
 
 ### Add Swim Button
 
-Situated on the All Swims page, above the image of somebody swimming, is the “Add Swim Button”. When clicked, this button takes the user to a form where users are asked to give a title to their swim, describe their swim, rate the cleanliness, choose a date of when they went swimming (this could be any time in the past as the user did not necessarily go swimming on the day of posting), are asked if they would go again, and asked to specify the location from the dropdown. While the title and description are boxes for the user to type into, the dat is selected using Materialize’s “Datepicker”, creating a good user experience. Once users are happy with their entry, the user will click “Add Swim” below the form to post their swim.
+Situated on the All Swims page, above the image of somebody swimming, is the “Add Swim Button”. When clicked, this button takes the user to a form where users are asked to give a title to their swim, describe their swim, rate the cleanliness, choose a date of when they went swimming (this could be any time in the past as the user did not necessarily go swimming on the day of posting), are asked if they would go again, and asked to specify the location from the dropdown. While the title and description are boxes for the user to type into, the date is selected using Materialize’s “Datepicker”, creating a good user experience. Once users are happy with their entry, the user will click “Add Swim” below the form to post their swim.
 
 Add swim form:
 
@@ -216,7 +216,7 @@ Mobile:
 
 ### Add location
 
-Once sers have clicked the "Add Location" button, the user is taken to its form. Users will type the name of their desired location before clicking to add it.
+Once users have clicked the "Add Location" button, the user is taken to its form. Users will type the name of their desired location before clicking to add it.
 
 Desktop:
 
@@ -318,7 +318,7 @@ The [CSS Validator](https://jigsaw.w3.org/css-validator/validator) shows no erro
 
 [JS Hint](https://jshint.com/) showed no errors.
 
-**Ligthhouse**
+**Lighthouse**
 
 Here are the [Google Lighthouse](<https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?pli=1>) scores: 
 
