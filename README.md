@@ -15,7 +15,6 @@ The target audience for this website are experienced or potential cold water swi
 #### First Time Visitor Goals
 
 As a first time user of the site, I want to be able to
-Create an account
 
 - Create an account
 - Learn what the website is about
