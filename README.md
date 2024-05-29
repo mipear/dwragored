@@ -318,7 +318,35 @@ Materialize has been incredibly useful in ensuring accessibility needs are met. 
 
 **Ligthhouse**
 
-[Google Lighthouse](<https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?pli=1>): ![Google Lighthouse]()
+Here are the [Google Lighthouse](<https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?pli=1>) scores: 
+
+Home:
+
+![Home Lighthouse](homelighthouse.png)
+
+All Swims:
+
+![All Swims Lighthouse](allswimslighthouse.png)
+
+Add Swim:
+
+![Add Swim Lighthouse](addswimlighthouse.png)
+
+Location:
+
+![Location Lighthouse](locationlighthouse.png)
+
+Add Location:
+
+![Add Location Lighthouse](addlocationlighthouse.png)
+
+Log In:
+
+![Log In Lighthouse](loginlighthouse.png)
+
+Profile:
+
+![Profile Lighthouse](profilelighthouse.png)
 
 ### Defensive Programming
 
