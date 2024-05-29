@@ -8,6 +8,8 @@ Please see my old repository for old commit messages, as it was necessary to cre
 
 [Old repository](https://github.com/mipear/dwr-agored)
 
+![Am I responsive?](dwragored/static/images/docs/amiresponsive.png)
+
 ## UX
 
 ## User Stories
