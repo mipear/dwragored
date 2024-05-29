@@ -57,6 +57,7 @@ As a returning user of the site I want to be able to:
 - Ability for users to reset passwords if they have forgotten their password
 - For users to be able to upload photos of their swimming experience
 - Ability for users to comment on each other's posts
+- Extend area of swimming locations. Currently the site focuses on South Wales in order to ensure it is effective, but it would be better to include a variety of locations for more users.
 
 ## Wireframes
 
@@ -418,7 +419,7 @@ HTML, CSS, Python, and Javascript.
 
 ### Database Used
 
-Postgresl, ElephantSQL
+This site used relational database PostgreSQL using [ElephantSQL](https://customer.elephantsql.com/).
 
 ### Frameworks Used
 
