@@ -115,7 +115,6 @@ def location():
 
 # Add location
 @app.route("/add_location", methods=["GET", "POST"])
-@login_required
 def add_location():
     if request.method == "POST":
         location = Location(location_name=request.form.get("location_name"),
@@ -150,7 +149,6 @@ def delete_location(location_id):
 
 # Add swim
 @app.route("/add_swim", methods=["GET", "POST"])
-@login_required
 def add_swim():
     print(current_user)
     location = list(Location.query.order_by(Location.location_name).all())
