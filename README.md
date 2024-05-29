@@ -76,9 +76,19 @@ This will be the log in page.
 
 ## Features
 
+### Favicon
+
+![Favicon](dwragored/static/images/docs/testing/favicon.png)
+
+The Favicon is a simple wave icon. Initially, this would be a more complex image of a person swimming, however, it was difficult to see and therefore caused a bad user experience. The wave allows any user to understand immediately the site's focus on water.
+
 ### The Navigation Menu
 
-![The Navigation Menu](dwragored/static/images/docs/navigation.webp)
+![The Navigation Menu](dwragored/static/images/docs/testing/navigation.png)
+
+Burger navigation:
+
+![The Navigation Menu for tablet screens](dwragored/static/images/docs/testing/navigationipad.png)
 
 The NavBar for new users shows only three pages: Home Page, Register, and Log In. The Navigation Bar changes when users log in, allowing returning users to have access to the following: Home Page, All Swims, Location, Profile, Log Out. The necessity to have an account for the likes of “All Swims” and “Location” ensures that only regular users are able to create posts and edit other people’s. The profile offers a space for users to feel individually a part of the website. In future implementations of this site, users’ own swims will feature on their Profile page and users could follow other users. On smaller screens, this becomes a hamburger menu to ensure good user practice.
 
@@ -92,11 +102,17 @@ The Logo is simply the title “Dŵr Agored” written in blue. This is situated
 
 The Home Page is a page all users have access to. The Home Page’s purpose is to clearly tell the new or returning user what the purpose of the website is. It shows a hero image and an About section. Initially, this was going to have the All Swims posts too, however, this has been changed to entice new users to register and become a recurring user. The more returning users that visit the site and create posts, the more locations and experiences that exist on the website, creating a space for recommendations and reflections. It’s important for users to feel the benefits of having an account and signing in.
 
+Desktop:
+
 ![Home desktop](dwragored/static/images/docs/testing/home.png)
+
+Tablet:
 
 ![Home iPad upper](dwragored/static/images/docs/testing/homeipad.png)
 
 ![Home iPad bottom](dwragored/static/images/docs/testing/homeipadbottom.png)
+
+Mobile:
 
 ![Home Phone upper](dwragored/static/images/docs/testing/homephone.png)
 
@@ -120,6 +136,30 @@ The All Swims page only features for returning users. This page shows users’ p
 
 Below the image are collapsible posts of users’ swims. The posts initially shows the title of the swim and the date of the swim. When a user clicks the arrow button on the left, the post is shown fully. Users are able to see the Location, a description, the cleanliness of the swim, and whether the user would like to go again.
 
+Desktop:
+
+![All Swims Desktop Upper](dwragored/static/images/docs/testing/allswimsdesktop.png)
+
+![All Swims Desktop Lower](dwragored/static/images/docs/testing/allswimsbottom.png)
+
+Tablet:
+
+![All Swims - tablet](dwragored/static/images/docs/testing/allswimstablet.png)
+
+![All Swims - tablet open](dwragored/static/images/docs/testing/swimstablet.png)
+
+Mobile:
+
+![All Swims - Phone](dwragored/static/images/docs/testing/allswimsphone.png)
+
+To ensure good user experience and securing users' posts, users can only edit and delete their own posts, as seen below:
+
+![Editable All Swim](dwragored/static/images/docs/testing/swimseditable.png)
+
+Above, users are able to edit the swim, due to them having created the post, whereas below they cannot.
+
+![Uneditable All Swim](dwragored/static/images/docs/testing/swimsuneditable)
+
 ### Add Swim Button
 
 Situated on the All Swims page, above the image of somebody swimming, is the “Add Swim Button”. When clicked, this button takes the user to a form where users are asked to give a title to their swim, describe their swim, rate the cleanliness, choose a date of when they went swimming (this could be any time in the past as the user did not necessarily go swimming on the day of posting), are asked if they would go again, and asked to specify the location from the dropdown. While the title and description are boxes for the user to type into, the dat is selected using Materialize’s “Datepicker”, creating a good user experience. Once users are happy with their entry, the user will click “Add Swim” below the form to post their swim.
@@ -133,6 +173,12 @@ Users are able to edit their swim by clicking the “Edit” button on the colla
 The Location page is a space in which users can add their swim locations in order to use for the All Swims post. To add a location, users simply click “Add Location”. Users type their specified location before selecting “Add New Location”. This page is for regular users only in order to protect the locations submitted. If a location is deleted, all posts using that location are also deleted, as this website’s predominant focus is recommending locations. Once added, locations are presented using Materialize cards, featuring the name of the location and edit/delete buttons similar to the All Swim buttons. These locations make up the locations users are able to choose from within the My Swim form.
 
 ![add location](dwragored/static/images/docs/addlocationimg.webp)
+
+### Footer
+
+The footer is featured on every page, allowing users to navigate to their desired social media platforms, opening up in a new window to ensure good user experience.
+
+![Footer](dwragored/static/images/docs/testing/socials.png)
 
 ### Log In/Log Out/Register
 
