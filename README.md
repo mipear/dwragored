@@ -322,31 +322,31 @@ Here are the [Google Lighthouse](<https://chromewebstore.google.com/detail/light
 
 Home:
 
-![Home Lighthouse](homelighthouse.png)
+![Home Lighthouse](dwragored/static/images/docs/testing/homelighthouse.png)
 
 All Swims:
 
-![All Swims Lighthouse](allswimslighthouse.png)
+![All Swims Lighthouse](dwragored/static/images/docs/testing/allswimslighthouse.png)
 
 Add Swim:
 
-![Add Swim Lighthouse](addswimlighthouse.png)
+![Add Swim Lighthouse](dwragored/static/images/docs/testing/addswimlighthouse.png)
 
 Location:
 
-![Location Lighthouse](locationlighthouse.png)
+![Location Lighthouse](dwragored/static/images/docs/testing/locationlighthouse.png)
 
 Add Location:
 
-![Add Location Lighthouse](addlocationlighthouse.png)
+![Add Location Lighthouse](dwragored/static/images/docs/testing/addlocationlighthouse.png)
 
 Log In:
 
-![Log In Lighthouse](loginlighthouse.png)
+![Log In Lighthouse](dwragored/static/images/docs/testing/loginlighthouse.png)
 
 Profile:
 
-![Profile Lighthouse](profilelighthouse.png)
+![Profile Lighthouse](dwragored/static/images/docs/testing/profilelighthouse.png)
 
 ### Defensive Programming
 
