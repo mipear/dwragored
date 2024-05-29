@@ -295,7 +295,7 @@ As mentioned previously, the 'datepicker' used in the 'Add Swim' form is only cl
 
 ## Database Schema
 
-![Database Schema](dwragored/static/images/docs/dbschema.webp)
+![Database Schema](dwragored/static/images/docs/dbschema.png)
 
 ## Testing
 
@@ -457,6 +457,8 @@ This site used relational database PostgreSQL using [ElephantSQL](https://custom
 
 - The Wireframes were created using [Balsamiq](https://balsamiq.com/)
 
+- To create the DB schema, I used [Lucidchart](https://www.lucidchart.com/pages/templates/login-or-sign-up-page-wireframe)
+
 - [Coolors](https://coolors.co/)’s “Colour Picker” has been used to choose colours from the hero image.
 
 - [Unsplash](https://unsplash.com/photos/woman-in-body-of-water-during-daytime-PYRxWCDvQtg) was used for the swimming image on the All Swims page. The hero image was taken by myself.
@@ -466,6 +468,8 @@ This site used relational database PostgreSQL using [ElephantSQL](https://custom
 - To implement the User Login and the ability to edit and delete, I used this [Flask Login Documentation](https://flask-login.readthedocs.io/en/latest/#)
 
 - [Favicon](https://favicon.io/) provided the wave Favicon.
+
+- [Am I responsive?](https://ui.dev/amiresponsive) was used to create the image in this readme.
 
 ## Acknowledgment
 
