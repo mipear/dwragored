@@ -4,6 +4,10 @@ The purpose of Dŵr Agored is to offer cold water swimmers in the South Wales ar
 
 Here is the deployed version of [Dŵr Agored](https://dwragored-d6da67bc58d1.herokuapp.com/).
 
+Please see my old repository for old commit messages, as it was necessary to create a new workspace when fixing this site:
+
+[Old repository](https://github.com/mipear/dwr-agored)
+
 ## UX
 
 ## User Stories
@@ -92,6 +96,10 @@ Burger navigation:
 
 The NavBar for new users shows only three pages: Home Page, Register, and Log In. The Navigation Bar changes when users log in, allowing returning users to have access to the following: Home Page, All Swims, Location, Profile, Log Out. The necessity to have an account for the likes of “All Swims” and “Location” ensures that only regular users are able to create posts and edit other people’s. The profile offers a space for users to feel individually a part of the website. In future implementations of this site, users’ own swims will feature on their Profile page and users could follow other users. On smaller screens, this becomes a hamburger menu to ensure good user practice.
 
+Burger Navigation for logged out users on tablet:
+
+![The Navigation Menu logged out for tablet screens](dwragored/static/images/docs/testing/navloggedouttablet.png)
+
 ### Logo
 
 The Logo is simply the title “Dŵr Agored” written in blue. This is situated on the left of the nav bar. When clicked, this will redirect to the Home Page. “Dŵr Agored” translates to “Open Water”. The simplicity of this definition and the styling of the logo has been done to emphasise the simplicity of the concept itself and the necessity of it too. The fact that this is written in Welsh, contextualises the site to be for people in Wales, immediately targeting the desired users.
@@ -152,7 +160,11 @@ Mobile:
 
 ![All Swims - Phone](dwragored/static/images/docs/testing/allswimsphone.png)
 
-To ensure good user experience and securing users' posts, users can only edit and delete their own posts, as seen below:
+### Edit and Delete
+
+Users are able to edit their swim by clicking the “Edit” button on the collapsible swim posts on the All Swims page. By clicking “Edit”, users are taken to the swim form they initially filled out to add their swim, but are now able to adjust their answers. To delete a swim, users can click “Delete” on the same collapsible post. The “Delete” button, when clicked, takes the user to a modal asking whether the user is sure they wish to delete their swim. This defensive programming ensures users cannot accidentally delete their posts.
+
+To ensure good user practice, users are only able to edit/delete their own posts, as seen below:
 
 ![Editable All Swim](dwragored/static/images/docs/testing/swimseditable.png)
 
@@ -164,15 +176,59 @@ Above, users are able to edit the swim, due to them having created the post, whe
 
 Situated on the All Swims page, above the image of somebody swimming, is the “Add Swim Button”. When clicked, this button takes the user to a form where users are asked to give a title to their swim, describe their swim, rate the cleanliness, choose a date of when they went swimming (this could be any time in the past as the user did not necessarily go swimming on the day of posting), are asked if they would go again, and asked to specify the location from the dropdown. While the title and description are boxes for the user to type into, the dat is selected using Materialize’s “Datepicker”, creating a good user experience. Once users are happy with their entry, the user will click “Add Swim” below the form to post their swim.
 
-### Edit and Delete
+Add swim form:
 
-Users are able to edit their swim by clicking the “Edit” button on the collapsible swim posts on the All Swims page. By clicking “Edit”, users are taken to the swim form they initially filled out to add their swim, but are now able to adjust their answers. To delete a swim, users can click “Delete” on the same collapsible post. The “Delete” button, when clicked, takes the user to a modal asking whether the user is sure they wish to delete their swim. This defensive programming ensures users cannot accidentally delete their posts.
+![Add Swim form with placeholders](dwragored/static/images/docs/testing/addswimplaceholders.png)
+
+Desktop:
+
+![Desktop Add Swim](dwragored/static/images/docs/testing/addswimdesktop.png)
+
+Tablet:
+
+![Tablet Add Swim](dwragored/static/images/docs/testing/addswimtablet.png)
+
+Mobile:
+
+![Mobile Upper Add](dwragored/static/images/docs/testing/addswimphone.png)
+
+![Mobile Lower Add](dwragored/static/images/docs/testing/addswimbottom.png)
 
 ### Location Page
 
 The Location page is a space in which users can add their swim locations in order to use for the All Swims post. To add a location, users simply click “Add Location”. Users type their specified location before selecting “Add New Location”. This page is for regular users only in order to protect the locations submitted. If a location is deleted, all posts using that location are also deleted, as this website’s predominant focus is recommending locations. Once added, locations are presented using Materialize cards, featuring the name of the location and edit/delete buttons similar to the All Swim buttons. These locations make up the locations users are able to choose from within the My Swim form.
 
-![add location](dwragored/static/images/docs/addlocationimg.webp)
+As seen below, only the location creator is given the option to edit and delete their location, ensuring other users cannot alter locations.
+
+Desktop:
+
+![Desktop location](dwragored/static/images/docs/testing/locationdesktop.png)
+
+Tablet:
+
+![Tablet location](dwragored/static/images/docs/testing/locationtablet.png)
+
+Mobile:
+
+![Mobile location upper](dwragored/static/images/docs/testing/locationphone.png)
+
+![Mobile location lower](dwragored/static/images/docs/testing/locationphonebottom)
+
+### Add location
+
+Once sers have clicked the "Add Location" button, the user is taken to its form. Users will type the name of their desired location before clicking to add it.
+
+Desktop:
+
+![Desktop Add Location](dwragored/static/images/docs/testing/addlocation.png)
+
+Tablet:
+
+![Tablet Add Location](dwragored/static/images/docs/testing/addlocationtablet.png)
+
+Mobile:
+
+![Mobile Add Location](dwragored/static/images/docs/testing/addlocationphone.png)
 
 ### Footer
 
@@ -183,6 +239,44 @@ The footer is featured on every page, allowing users to navigate to their desire
 ### Log In/Log Out/Register
 
 Users are able to Register for an account. Users must log in to access the All Swims and Location pages.
+
+Register page:
+
+![Register](dwragored/static/images/docs/testing/register.png)
+
+Log in to access All Swims/Location:
+
+![Log In](dwragored/static/images/docs/testing/logintoaccess.png)
+
+Logged out Desktop:
+
+![Logged out](dwragored/static/images/docs/testing/loggedout.png)
+
+Logged out tablet:
+
+![Logged out tablet](dwragored/static/images/docs/testing/loggedouttablet.png)
+
+Logged out mobile:
+
+![Logged out mobile](dwragored/static/images/docs/testing/loggedoutphone.png)
+
+![Logged out mobile](dwragored/static/images/docs/testing/loggedoutphonebottom.png)
+
+### Profile
+
+When users log in or register, they are taken to the profile page. Here users are welcomed and are able to add a swim.
+
+Dektop:
+
+![Profile desktop](dwragored/static/images/docs/testing/profiledesktop.png)
+
+Tablet:
+
+![Profile tablet](dwragored/static/images/docs/testing/profileipad.png)
+
+Mobile:
+
+![Profile mobile](dwragored/static/images/docs/testing/profilephone.png)
 
 ## Functionality
 
