@@ -372,7 +372,7 @@ Before deleting a swim or location, users are asked if they are sure they would 
 
 In your IDE workspace:
 
--Generate the requirements.txt file with the following command: pip freeze --local > requirements.txt
+- Generate the requirements.txt file with the following command: pip freeze --local > requirements.txt
 
 - Create a new file called "Procfile" in the root directory
 - Inside Procfile, add the following command: web: python run.py
@@ -402,6 +402,13 @@ Connecting the database to the hosting platform:
 - To create the tables, use "from dwragored import db" and then "db.create_all()". Exit the Python terminal by typing "exit()".
 - Click "Open app"
 - Congratulations! You have successfully deployed your app to Heroku!
+
+### Making a Local Clone
+
+- Log into GitHub and find your chosen repository.
+- Click the green 'Code' button
+- Copy the link provided below the HTTPS header
+- Open your IDE terminal and type "git clone", then paste the HTTPS link and click enter
 
 ## Technology
 
