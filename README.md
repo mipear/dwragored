@@ -39,20 +39,6 @@ As a returning user of the site I want to be able to:
 
 ![Map of user journey](dwragored/static/images/docs/userjourney.webp)
 
-### All user goals
-
-- Create an account
-- View swimming locations on a map of South Wales
-- Learn about what the website does
-
-### Returning user goals
-
-- Log in to own account
-- Post own experience of cold water swimming in South Wales area
-- View other people's post to gain new recommendations
-- Edit and delete own post
-- View own posts to reminisce and reflect on own experiences
-
 ### Future Development
 
 - Map for users to be able to input their swim location. This would be their precise location as opposed to a trust based map.
