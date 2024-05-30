@@ -349,7 +349,7 @@ Profile:
 
 ### Defensive Programming
 
-Before deleting a swim or location, users are asked if they are sure they would like to delete it. Only users who are logged in can alter their own posts.
+Before deleting a swim or location, users are asked if they are sure they would like to delete it. Only users who are logged in can create, update, and delete both swim and location posts in order to protect users' posts.
 
 ## Deployment
 
@@ -457,6 +457,6 @@ This site used relational database PostgreSQL using [ElephantSQL](https://custom
 
 - [Am I responsive?](https://ui.dev/amiresponsive) was used to create the image in this readme.
 
-## Acknowledgment
+## Acknowledgement
 
-Thank you to my mentor, Martina, my facilitator, Marko, and the tutor support team at Code Institute for supporting me with this project.
+Thank you to my mentor, Martina, and the tutor support team at Code Institute for supporting me with this project.
