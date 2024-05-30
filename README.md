@@ -277,7 +277,7 @@ Materialize has been incredibly useful in ensuring accessibility needs are met. 
 
 ### Unfixed bugs
 
-As mentioned previously, the 'datepicker' used in the 'Add Swim' form is only clickable. If users attempt to tab through their choices on the 'Add Swim' form, the date allows users to type and, therefore, the form does not work. At a later date I will fix this issue.
+As mentioned previously, the 'datepicker' used in the 'Add Swim' form is only clickable. If users attempt to tab through their choices on the 'Add Swim' form, the date allows users to type and, therefore, the form does not work. At a later date, I will fix this issue. Another bug currently present on this site is that newly registered users must log in once more in order to create a swim or a location. Once users have logged in (again), this is no longer an issue and users are free to create, edit, and delete. This, of course, will be fixed following the submission.
 
 ## Database Schema
 
